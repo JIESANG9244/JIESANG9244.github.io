@@ -7,13 +7,33 @@
   
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="ST-DEMO##################################################################### 野火STM32F1系列开发板学习案例 野火F1开发板STM32-USART使用                2020-10-02 野火F1开发板STM32案例-外部中断(按键)使用    2020-10-03 更新….  ###########">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:url" content="http://example.com/2020/10/21/STM32/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="ST-DEMO##################################################################### 野火STM32F1系列开发板学习案例 野火F1开发板STM32-USART使用                2020-10-02 野火F1开发板STM32案例-外部中断(按键)使用    2020-10-03 更新….  ###########">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201002210908329.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzU5OTM5MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201002204307734.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzU5OTM5MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201002205012211.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201002210122772.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzU5OTM5MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201002210353427.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzU5OTM5MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201002210908329.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzU5OTM5MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2020100315141155.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzU5OTM5MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201003151410982.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzU5OTM5MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201003151626597.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzU5OTM5MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201003160403277.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzU5OTM5MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201003162222876.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzU5OTM5MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201003162222867.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201003153440133.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzU5OTM5MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201003153501455.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzU5OTM5MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201003153501430.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzU5OTM5MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="article:published_time" content="2020-10-21T12:42:44.120Z">
+<meta property="article:modified_time" content="2020-10-04T15:34:23.190Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20201002210908329.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzU5OTM5MA==,size_16,color_FFFFFF,t_70#pic_center">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -62,9 +82,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-STM32" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-STM32" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/10/21/STM32/" class="article-date">
   <time datetime="2020-10-21T12:42:44.120Z" itemprop="datePublished">2020-10-21</time>
@@ -172,191 +190,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/10/21/hello-world/" class="article-date">
-  <time datetime="2020-10-21T12:42:44.109Z" itemprop="datePublished">2020-10-21</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/10/21/hello-world/">Hello World</a>
-    </h1>
+    <a href="/2020/10/21/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2020/10/21/hello-world/" data-id="ckgje0g3l0000zcvqd6pw8m9s" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-构造方法" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/10/21/%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95/" class="article-date">
-  <time datetime="2020-10-21T12:42:44.104Z" itemprop="datePublished">2020-10-21</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ul>
-<li>一般来说，构造方法就是在创建一个对象时调用的那个方法</li>
-</ul>
-<p>​     <strong>构造方法</strong></p>
-<ol>
-<li><p>构造方法的名称必须与类的名称相同。比如类的名称叫A，那么它的构造方法必须也叫A。</p>
-</li>
-<li><p>构造方法的前面不能声明返回值类型，即便是void也不行。只有满足了这两个条件，编译器才会认定这个方法是构造方法。</p>
-</li>
-<li><p>三、如果程序员没有在类中定义构造方法，那么在编译阶段，编译器会“免费赠送”给这个类一个构造方法，也就是说，编译器会在编译阶段在字节码文件中补充添加一个构造方法。</p>
-<ul>
-<li>我们创建一个类的对象必须要调用构造方法，但构造方法的作用其实并不是为了创建对象，而是为了“初始化对象的内部状态”。“初始化对象的内部状态”这句话听起来不太好理解，其实就是为了给对象的各个属性赋初始值。我们来看一个例子：</li>
-</ul>
-</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>&#123;<br>    String name;<br>    <span class="hljs-keyword">int</span> age;<br>    <br>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printInfo</span><span class="hljs-params">()</span></span>&#123;<br>        System.out.println(<span class="hljs-string">&quot;我叫&quot;</span>+name+<span class="hljs-string">&quot;，我今年&quot;</span>+age+<span class="hljs-string">&quot;岁&quot;</span>);<br>    &#125;<br>&#125;<br><br><br></code></pre></td></tr></table></figure>
-
-<p>我们创建一个类的对象必须要调用构造方法，但构造方法的作用其实并不是为了创建对象，而是为了“初始化对象的内部状态”。“初始化对象的内部状态”这句话听起来不太好理解，其实就是为了给对象的各个属性赋初始值。我们来看一个例子：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Test</span></span>&#123;<br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span></span>&#123;<br>        Person p1 = <span class="hljs-keyword">new</span> Person();<br>        Person p2 = <span class="hljs-keyword">new</span> Person();<br>        p1.printInfo();<br>        p2.printInfo();<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
-
-<p>执行结果  </p>
-<p><code>我叫null，我今年0岁 </code></p>
-<p><code>我叫mull，我今年0岁</code></p>
-<p>我们发现，这两个对象的name属性和age属性的值都是默认的那个初始值，这种初始值其实没有太大意义。如果我们希望在创建对象的时候给就对象的两个属性赋上有意义的值，此时我们就可以把给属性赋值的语句写到构造方法当中。  </p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>&#123;<br>    String name;<br>    <span class="hljs-keyword">int</span> age;<br>    <span class="hljs-comment">//定义一个构造方法并且在构造方法中给属性赋值</span><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Peron</span><span class="hljs-params">()</span></span>&#123;  <span class="hljs-comment">//构造方法</span><br>        name = <span class="hljs-string">&quot;张三&quot;</span>;<br>        age = <span class="hljs-number">20</span>;<br>    &#125;<br>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printInfo</span><span class="hljs-params">()</span></span>&#123;<br>        System.out.println(<span class="hljs-string">&quot;我叫&quot;</span>+name+<span class="hljs-string">&quot;，我今年&quot;</span>+age+<span class="hljs-string">&quot;岁&quot;</span>);<br>    &#125;<br>&#125;<br><br></code></pre></td></tr></table></figure>
-
-<p>有了构造方法之后，我们再次执行main方法，得到的结果是这样的</p>
-<p><code>我叫张三，我今年20岁</code>  </p>
-<p><code>我叫张三，我今年20岁</code>  </p>
-<p>从运行结果上来看，两个对象的属性都被赋予了有意义的值。但是问题来了：按照这样的写法，我们所创建的每个Person对象，name属性都被赋值为“张三”，而age属性都被赋值为20。这说明我们创建的对象是“千篇一律”的，并且从情理上也说不通，毕竟每个人都有属于自己的名字和年龄，不可能每个人都叫张三年龄20岁。</p>
-<p>那么，如何在创建对象的时候，为每个对象都初始化属于自己的真实数据呢？这时候，我们就要用有参数的构造方法来搞定这个问题了。我们可以给构造方法添加两个参数，通过参数把数据传递给对象的属性</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>&#123;<br>    String name;<br>    <span class="hljs-keyword">int</span> age;<br>    <span class="hljs-comment">//定义一个构造方法并且在构造方法中给属性赋值</span><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Person</span><span class="hljs-params">(String name,<span class="hljs-keyword">int</span> age)</span></span>&#123;  <span class="hljs-comment">//在原构造方法上添加参数并且用参数给对象属性赋值</span><br>        <span class="hljs-keyword">this</span>.name = name;<br>        <span class="hljs-keyword">this</span>.age = age;<br>    &#125;<br>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">printInfo</span><span class="hljs-params">()</span></span>&#123;<br>        System.out.println(<span class="hljs-string">&quot;我叫&quot;</span>+name+<span class="hljs-string">&quot;，我今年&quot;</span>+age+<span class="hljs-string">&quot;岁&quot;</span>);<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
-
-<p>当我们给构造方法添加了两个参数之后，却发现main方法中原来本来正确的代码出现了语法错误  </p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Test</span></span>&#123;<br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span></span>&#123;<br>        Person p1 = <span class="hljs-keyword">new</span> Person();<br>        Person p2 = <span class="hljs-keyword">new</span> Person();<br>        p1.printInfo();<br>        p2.printInfo();<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
-
-<p>作者：穆哥学堂<br>链接：<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/358104936/answer/940588216">https://www.zhihu.com/question/358104936/answer/940588216</a><br>来源：知乎<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
-<p>这是为什么呢？就是因为我们给Person类的构造方法添加了参数，现在Person类当中已经没有无参数的构造方法了，既然Person类当中已经没有了无参数的构造方法，那么我们在main方法中调用Person类无参数的构造方法，肯定会报错。</p>
-<p>有人会问：编译器不是会“免费赠送”给每个类一个无参数的构造方法吗？那个送来的构造方法哪去了？这里需要特别说明一下：编译器“赠送”给类无参数构造方法是有条件的，这个条件就是：程序员没有为类定义构造方法。也就是说：只有程序员没有为类添加构造方法的情况下，编译器才会在编译的时候给这个类去自动添加一个无参数的构造方法，现在，程序员已经给Person类定义了构造方法，那么编译器就不会再给这个类添加构造方法了。</p>
-<p>好，回归正题，现在我们想修改这个语法错误很简单，只要在main方法中给Person类的构造方法传递适当的参数就可以了</p>
-<p><img src="https://pic2.zhimg.com/50/v2-78ccd02418e058ed7b05907873e06f28_hd.jpg?source=1940ef5c" alt="img"><img src="https://pic2.zhimg.com/80/v2-78ccd02418e058ed7b05907873e06f28_720w.jpg?source=1940ef5c" alt="img"></p>
-<p>给构造方法传递了参数之后，语法错误自然消失。再次运行程序，会得到这样的结果</p>
-<p><img src="https://pic1.zhimg.com/50/v2-d6dde1cb949029b4621d8b46d1c4ef4f_hd.jpg?source=1940ef5c" alt="img"><img src="https://pic1.zhimg.com/80/v2-d6dde1cb949029b4621d8b46d1c4ef4f_720w.jpg?source=1940ef5c" alt="img"></p>
-<p>大家可以看到，这一次，我们就能够按照我们的意愿，创建出有自己个性化的对象了。通过这个例子我们可以看出：构造方法的作用是给对象的各个属性赋上合理的初始值，从而使得我们所创建的对象不再是“千篇一律”，而是“千姿百态”。</p>
-<p>那么，现在我们可以再来思考两个问题：第一个问题：构造方法可以像普通方法那样实现重载吗？这是完全没有问题的，我们可以在一个类中定义多个构造方法，只要这些构造方法参数不同，就构成了重载。第二个问题：在一个构造方法中，可以调用另外一个构造方法吗？也没有问题，但调用的时候，需要注意：不能像调用普通方法那样，通过类名去调用，而是需要用一个关键字this。但是这种调用也有两个条件：</p>
-<p>一、调用构造构造方法的语句必须放在第一行。</p>
-<p>二、两个构造方法不能形成相互调用关系。为了方便表述，我们把一个类中的两个构造方法代称为X和Y。如果我们在X中调用了Y，那么就不能在Y中去调用X了。否则就会形成循环依赖关系，我们来看下面的例子</p>
-<p><img src="https://pic2.zhimg.com/50/v2-a9a8f1568a2ce54efe5672845b94a01e_hd.jpg?source=1940ef5c" alt="img"><img src="https://pic2.zhimg.com/80/v2-a9a8f1568a2ce54efe5672845b94a01e_720w.jpg?source=1940ef5c" alt="img"></p>
-<p>我们在一个构造方法中调用了另一个构造方法，调用的时候，需要用到this关键字，并且把调用语句写到第一行，这样才能顺利通过编译。</p>
-<p>以上我们讲解的都是关于构造方法的基本常识，在这个讲解的过程中，并没有设计到类的继承关系。如果涉及继承关系，构造方法在定义和调用的过程中也有一些必须了解的知识点。</p>
-<p>首先必须清楚，如果我们创建的是一个子类的对象，那么在创建这个子类对象的时候，虚拟机会先调用父类的构造方法，之后才去调用子类的构造方法。这个顺序不能错，否则会出现语法错误。为了说明问题：我们先来给Person类添加一个无参数的构造方法，并在构造方法中输出一句”父类的构造方法”</p>
-<p><img src="https://pic4.zhimg.com/50/v2-6731d7d9f1804b4155af4bb999ff8866_hd.jpg?source=1940ef5c" alt="img"><img src="https://pic4.zhimg.com/80/v2-6731d7d9f1804b4155af4bb999ff8866_720w.jpg?source=1940ef5c" alt="img"></p>
-<p>之后我们再定义出一个Person类的子类Student，并且在子类中也定义一个无参数的构造方法，在构造方法中输出一句”子类的构造方法“</p>
-<p><img src="https://pic2.zhimg.com/50/v2-1a8220d101b5ab2f527a4be9e61db16e_hd.jpg?source=1940ef5c" alt="img"><img src="https://pic2.zhimg.com/80/v2-1a8220d101b5ab2f527a4be9e61db16e_720w.jpg?source=1940ef5c" alt="img"></p>
-<p>之后，我们在main方法中创建一个子类对象</p>
-<p><img src="https://pic2.zhimg.com/50/v2-cb8bf653170859e51703799b7a846940_hd.jpg?source=1940ef5c" alt="img"><img src="https://pic2.zhimg.com/80/v2-cb8bf653170859e51703799b7a846940_720w.jpg?source=1940ef5c" alt="img"></p>
-<p>运行main方法，得到结果如下图：</p>
-<p><img src="https://pic4.zhimg.com/50/v2-a858e66efb52b4ce568d9420d470f130_hd.jpg?source=1940ef5c" alt="img"><img src="https://pic4.zhimg.com/80/v2-a858e66efb52b4ce568d9420d470f130_720w.jpg?source=1940ef5c" alt="img"></p>
-<p>很多人不明白，在子类的构造方法中，只是输出了“子类的构造方法”这样一句话，控制台上为什么同时还输出了“父类的构造方法”？原因就是我们刚才所说的：调用子类构造方法的时候，会首先调用父类的构造方法。即使程序员没有写代码去调用父类的构造方法，编译器也会把调用父类构造方法的语句补充添加到代码中。</p>
-<p>那么，补充添加调用父类构造方法的代码，是如何实现的？这里必须先讲一下子类调用父类构造方法的语法细节：</p>
-<p>一、子类调用父类构造方法的时候，不能通过构造方法本身的名称来调用，必须使用super关键字。</p>
-<p>二、子类在它的普通方法中不能调用父类的构造方法，只能在它自身的构造方法中才能调用。</p>
-<p>三、子类调用父类构造方法的语句，必须写在自身构造方法的第一行。</p>
-<p>这三条语法规则至关重要，请牢记。按照这个语法规则，编译器看到程序员没有在子类构造方法中调用父类构造方法，会按下图所示的方式把调用父类构造方法的语句添加到代码中</p>
-<p><img src="https://pic1.zhimg.com/50/v2-40ba004e8148d7c3c7f6ea1b48e49740_hd.jpg?source=1940ef5c" alt="img"><img src="https://pic1.zhimg.com/80/v2-40ba004e8148d7c3c7f6ea1b48e49740_720w.jpg?source=1940ef5c" alt="img"></p>
-<p>通过上图可以看到，如果程序员没有在子类构造方法中添加调用父类构造方法的语句，编译器会自动把那条调用语句补充进来，并且放到子类构造方法的第一行。在文章一开始提出了一个问题：编译器会在赠送给我们的构造方法中添加什么内容，此时你应该明白了吧？就是因为在子类的构造方法中调用了父类的构造方法，所以我们才会在控制台上会看到两条输出语句。</p>
-<p>现在又冒出一个问题：父类如果有好几个构造方法，编译器会自动调用哪一个呢？这里必须明确：编译器只会调用那个无参数的构造方法，不会调用有参数的构造方法。这个规则又会引发一个新的问题，那就是：如果父类中压根就没有无参数的构造方法，那怎么办？在这种情况下，编译器就会强制子类定义一个构造方法，并且在它的构造方法中，通过手动调用的形式去调用父类的构造方法，如果你不那么干，编译器就会使出它的杀手锏：划红线！来看下图：</p>
-<p><img src="https://pic2.zhimg.com/50/v2-60239e45c9e9bfa24ba48209abab5fa2_hd.jpg?source=1940ef5c" alt="img"><img src="https://pic2.zhimg.com/80/v2-60239e45c9e9bfa24ba48209abab5fa2_720w.jpg?source=1940ef5c" alt="img"></p>
-<p>既然无论程序员是否愿意，子类在它的构造方法当中必须要调用父类的构造方法，那么，通常情况下我们应该怎样调用父类构造方法才算合理呢？一般来讲，子类都会比父类拥有更多的属性。就本文而言，父类(Person)有2个属性，分别是name和age，而子类(Student)有3个属性，分别是name、age和num。当然，子类的3个属性当中，有2个是从父类那里继承过来的。在创建一个Student对象的时候，必须对这3个属性进行初始化。所以通常子类的构造方法会定义3个参数，这3个参数分别用来初始化子类的3个属性。既然子类的3个属性当中，有2个是继承于父类的，那么就可以用父类的构造方法去初始化那2个继承来的属性，而剩下的那个由子类自身所定义的属性num，可以在子类自身构造方法中实现初始化，看下图</p>
-<p><img src="https://pic2.zhimg.com/50/v2-5f6cb11d2c5f11bcb5372850304c7329_hd.jpg?source=1940ef5c" alt="img"><img src="https://pic2.zhimg.com/80/v2-5f6cb11d2c5f11bcb5372850304c7329_720w.jpg?source=1940ef5c" alt="img"></p>
-<p>通常来讲，子类就是这样调用父类构造方法的。</p>
-<p>最后再回答一个问题：普通方法的名称可以与类名相同吗？答案是：可以！在这种情况下，编译器区分该方法是普通方法还是构造方法，就看方法的前面有没有声明返回值类型。这就是为什么Java语言规定构造方法不能有声明返回值类型的原因。</p>
-<p>   [构造方法]（<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/358104936%EF%BC%89">https://www.zhihu.com/question/358104936）</a>    </p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2020/10/21/%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95/" data-id="ckgje0g4d0002zcvq37p1ejkm" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-搭建个人博客" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/10/21/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="article-date">
-  <time datetime="2020-10-21T12:42:44.093Z" itemprop="datePublished">2020-10-21</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <img src="https://i.loli.net/2020/10/21/gtPuURBF7XbI89K.jpg" alt="img" style="zoom: 33%;" />
-
-
-
-<p>搭建个人博客</p>
-<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/lzrreach/article/details/52863798">https://blog.csdn.net/lzrreach/article/details/52863798</a>    </p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2020/10/21/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" data-id="ckgje0g4b0001zcvq429o6efh" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
